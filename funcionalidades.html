@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Aplicación Web Interactiva</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Funcionalidades Lógicas</h2>
+
+        <div class="funcionalidades-container">
+            <!-- Comparar Números -->
+            <div class="funcionalidad">
+                <h3>Comparar Números</h3>
+                <input type="number" id="num1" placeholder="Número 1">
+                <input type="number" id="num2" placeholder="Número 2">
+                <br>  <br/>
+                <button id="btnComparar">Comparar</button>
+                <div id="resultadoIf"></div>
+            </div>
+
+            <!-- Mes del Año -->
+            <div class="funcionalidad">
+                <h3>Mes del Año</h3>
+                <input type="number" id="mesInput" placeholder="Ingrese un número (1-12)">
+                <button id="btnMostrarMes">Mostrar Mes</button>
+            </div>
+
+            <!-- Lista de Nombres -->
+            <div class="funcionalidad">
+                <h3>Lista de Nombres</h3>
+                <input type="text" id="nombreInput" placeholder="Nombre">
+                <button id="btnAgregarNombre">Agregar</button>
+                <div id="listaNombresContainer">
+                    <h4>Nombres Registrados:</h4>
+                    <ul id="listaNombres"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aplicación Web Interactiva</p>
+    </footer>
+</body>
+
+</html>

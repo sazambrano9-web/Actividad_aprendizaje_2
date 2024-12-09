@@ -1,0 +1,135 @@
+/* Reset básico: Quitamos márgenes y paddings para empezar desde cero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el tamaño total incluya el borde y padding */
+}
+
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente estándar para todo el texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8fb; /* Color de fondo claro */
+}
+
+/* Encabezado */
+header {
+    background-color: #3a8dfa; /* Color azul para el fondo */
+    color: white; /* Texto en blanco */
+    padding: 1rem 0; /* Espaciado arriba y abajo */
+    text-align: center; /* Centra el contenido */
+}
+
+header nav ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0; /* Sin espacio interno */
+    margin: 0; /* Sin margen */
+    display: flex; /* Hace que los elementos se alineen en fila */
+    justify-content: center; /* Centra la lista horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+header nav ul li a {
+    color: white; /* Los enlaces son blancos */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto más grueso */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+/* Contenedor principal de funcionalidades (3 columnas) */
+.funcionalidades-container {
+    display: flex; /* Flexbox para alinear las columnas */
+    justify-content: space-between; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Hace que las columnas se apilen si no caben */
+    gap: 20px; /* Espacio entre las columnas */
+    margin-top: 20px; /* Espacio encima del contenedor */
+}
+
+/* Cada funcionalidad (columna) */
+.funcionalidad {
+    flex: 1 1 calc(33.333% - 20px); /* Cada columna ocupa un tercio del ancho */
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Texto centrado */
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .funcionalidad {
+        flex: 1 1 100%; /* Las columnas ocupan todo el ancho */
+    }
+}
+
+/* Estilo para el contenido principal */
+main {
+    padding: 20px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centrado horizontal */
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Tabla para mostrar datos */
+table {
+    width: 100%; /* Tabla ocupa todo el ancho */
+    border-collapse: collapse; /* Sin doble borde */
+    margin-top: 20px; /* Espaciado encima de la tabla */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno en celdas */
+    text-align: center; /* Texto centrado */
+}
+
+table th {
+    background-color: #3a8dfa; /* Fondo azul para encabezados */
+    color: white; /* Texto blanco */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fila gris claro para las filas pares */
+}
+
+/* Botones generales */
+button {
+    background-color: #3a8dfa; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Manita al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Espacio arriba */
+}
+
+button:hover {
+    background-color: #005bb5; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    background-color: #222; /* Fondo negro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Texto centrado */
+    padding: 1rem 0; /* Espaciado arriba y abajo */
+    margin-top: 20px; /* Espacio encima del footer */
+}
+
+/* Input de búsqueda */
+input#buscar {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio debajo del input */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Aplicación Web Interactiva</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Registro de Usuarios</h2>
+
+        <!-- Formulario de registro -->
+        <form id="formRegistro">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br>
+
+            <label for="cedula">Cédula de Identidad:</label>
+            <input type="text" id="cedula" name="cedula" required><br>
+
+            <label for="nombres">Nombres y Apellidos:</label>
+            <input type="text" id="nombres" name="nombres" required><br>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+
+            <label for="ciudad">Ciudad de Procedencia:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="Santo Domingo">Santo Domingo</option>
+                <option value="Quito">Quito</option>
+                <option value="Guayaquil">Guayaquil</option>
+                <option value="Cuenca">Cuenca</option>
+                <option value="Manta">Manta</option>
+            </select><br>
+
+            <button type="submit">Registrar</button>
+        </form>
+
+        <!-- Área para resultados -->
+        <div id="resultados">
+            <h3>Usuarios Registrados</h3>
+            <input type="text" id="buscar" placeholder="Buscar por nombre..." onkeyup="filtrarResultados()">
+            <table id="tablaUsuarios">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cédula</th>
+                        <th>Nombres</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Ciudad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los datos registrados aparecerán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aplicación Web Interactiva</p>
+    </footer>
+</body>
+
+</html>
+
+
